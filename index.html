@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TATA — кроватки-машинки и толокары из фанеры</title>
+<meta name="description" content="Детские кровати в виде машин и толокары из берёзовой фанеры. Своё производство, безопасное покрытие, доставка по России.">
+
+<!-- Соцсети: как ссылка выглядит при отправке в мессенджер -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="TATA — кроватки-машинки и толокары из фанеры">
+<meta property="og:description" content="Детская мебель из берёзовой фанеры: кровати-машины и толокары. Доставка по России.">
+<meta property="og:image" content="images/og.png">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css?v=20260918">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#top">TATA</a>
+
+    <nav class="nav" id="nav">
+      <a href="#catalog">Каталог</a>
+      <a href="#about">О производстве</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ======================= Первый экран ======================= -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__kicker">берёзовая фанера · своя мастерская</p>
+        <h1 class="hero__title">Кроватки-машинки и&nbsp;толокары, которые не&nbsp;стыдно поставить в&nbsp;детскую</h1>
+        <p class="hero__lead">
+          Режем и собираем сами: фанера ФК, скруглённые кромки, покрытие
+          на водной основе без запаха. Любой цвет и имя ребёнка на кузове.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#catalog">Смотреть каталог</a>
+          <a class="btn btn--ghost" href="#contacts">Рассчитать под размер</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="images/hero.svg" alt="Детская кровать в виде машины из фанеры" width="640" height="640">
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Каталог ======================= -->
+  <section class="section" id="catalog">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Каталог</h2>
+        <p class="section__sub">Цены указаны за изделие в базовом цвете. Сроки изготовления — 10–14 дней.</p>
+      </div>
+
+      <!-- Фильтры рисует JS из категорий товаров -->
+      <div class="filters" id="filters"></div>
+
+      <!-- Точка монтирования карточек — не удалять, сюда рендерит app.js -->
+      <div class="grid" id="catalog-grid"></div>
+
+      <p class="grid__empty" id="catalog-empty" hidden>В этой категории пока пусто.</p>
+    </div>
+  </section>
+
+  <!-- ======================= О производстве ======================= -->
+  <section class="section section--muted" id="about">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Как мы это делаем</h2>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <span class="feature__icon">✳</span>
+          <h3>Фанера, а не ЛДСП</h3>
+          <p>Берёзовая фанера ФК 18 мм — она держит форму и нагрузку, не крошится по кромке и честно выглядит на срезе.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__icon">◈</span>
+          <h3>Безопасно для детской</h3>
+          <p>Все углы скруглены и отшлифованы, покрытие — лак на водной основе: без запаха, можно мыть.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__icon">✦</span>
+          <h3>Свой цвет и имя</h3>
+          <p>Красим в любой оттенок, наносим имя ребёнка или номер на кузов. Это не доплата за «индивидуальность», а часть работы.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Доставка и оплата ======================= -->
+  <section class="section" id="delivery">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Доставка, сборка и оплата</h2>
+      </div>
+      <div class="cols">
+        <div class="col">
+          <h3>Как приедет</h3>
+          <ul class="list">
+            <li>Транспортными компаниями по всей России — в разобранном виде, в жёсткой упаковке.</li>
+            <li>По городу — доставим сами и занесём в квартиру.</li>
+            <li>Сборка кровати — примерно 30 минут, нужен только шестигранник из комплекта.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Оплата</h3>
+          <ul class="list">
+            <li>Предоплата 50% в работу, остаток — перед отправкой.</li>
+            <li>Перевод по номеру телефона или на счёт для юрлиц.</li>
+            <li>Фото готового изделия присылаем до отгрузки.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= Контакты ======================= -->
+  <section class="section section--muted" id="contacts">
+    <div class="container">
+      <div class="section__head">
+        <h2 class="section__title">Связаться с нами</h2>
+        <p class="section__sub">Напишите, какая модель понравилась и какой у вас матрас, — посчитаем и назовём срок.</p>
+      </div>
+      <!-- Ссылки подставляет JS из CONFIG в js/app.js -->
+      <div class="contacts" id="contacts-links"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© <span id="year"></span> TATA</span>
+    <span class="footer__note">Сайт-визитка. Не является публичной офертой.</span>
+  </div>
+</footer>
+
+<!-- ======================= Окно товара ======================= -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <button class="modal__close" data-close aria-label="Закрыть">×</button>
+    <div class="modal__body" id="modal-body"></div>
+  </div>
+</div>
+
+<script src="js/app.js?v=20260918"></script>
+</body>
+</html>
